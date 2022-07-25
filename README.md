@@ -3,4 +3,7 @@
 Decided to refresh some fundamentals, proven to be very useful from time to time
 
 This is just sort of a draft for my personal portfolio website.
-It isn't ready yet, but somewhat presentable
+It isn't ready yet, but somewhat presentable.
+
+Utilizes FlexBox, some basic Grid, it is adaptive, but not yet polished
+*This is a work in progress
