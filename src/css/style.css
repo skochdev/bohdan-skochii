@@ -1,0 +1,242 @@
+/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+:root {
+  --color-dark: #262625;
+  --color-medium-dark: #40403e;
+  --color-grey: #8c8c8c;
+  --color-light-grey: #e7e7e7;
+  --color-white-grey: #f2f2f2;
+  --color-orange-yellow: #ea9d45;
+  --color-magenta: #e310cb;
+  --color-orange-red: #ea6045;
+  --color-white: #f7f8fa;
+  --font-size: 1.3rem;
+
+  --font-barlow-condensed: "Barlow Condensed", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+/* generic settings*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-montserrat);
+  background-color: var(--color-white-grey);
+  color: var(--color-dark);
+  font-size: var(--font-size);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  line-height: 1.4;
+}
+
+a {
+  color: var(--color-orange-red);
+}
+
+a:hover {
+  color: var(--color-orange-yellow);
+  text-decoration: none;
+}
+
+/* COMMON, GENERAL STYLES*/
+
+[class*="fa-"] {
+  font-size: 150%;
+}
+
+/* intro section styles*/
+#intro {
+  padding-bottom: 10rem;
+}
+
+#intro p {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+#intro .my-name-is {
+  font-size: 1.5rem;
+  font-family: var(--font-barlow-condensed);
+}
+
+#intro .name {
+  font-weight: 700;
+  display: block;
+  font-size: 4rem;
+  color: var(--color-orange-red);
+}
+
+#intro h2 {
+  line-height: 1.5;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+#contact-me {
+  background-color: var(--color-medium-dark);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.contact-me {
+  max-width: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: var(--font-montserrat);
+  text-align: center;
+}
+
+.contact-me__heading {
+  font-family: var(--font-barlow-condensed);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.contact-me__text {
+  color: var(--color-light-grey);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.email-me__link {
+  font-family: var(--font-barlow-condensed);
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+/* HEADER*/
+
+header {
+  background-color: var(--color-light-grey);
+}
+
+/* NAVBAR*/
+nav {
+  font-family: var(--font-barlow-condensed);
+  font-size: 80%;
+  padding: 1rem;
+}
+
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+nav a {
+  color: var(--color-grey);
+  text-decoration: none;
+  display: block;
+}
+
+nav a:hover {
+  color: var(--color-dark);
+}
+
+.heading {
+  padding: 0;
+  margin: 0;
+}
+
+.main-heading a {
+  font-family: var(--font-montserrat);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.button {
+  background-color: var(--color-grey);
+  color: var(--color-white-grey);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: var(--color-dark);
+  color: var(--color-white-grey);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  padding: 3rem;
+  text-align: center;
+}
+
+small {
+  color: var(--color-grey);
+  display: block;
+  margin-top: 30px;
+}
+
+.footer-heading {
+  margin-bottom: 20px;
+  font-family: var(--font-montserrat);
+  color: var(--color-grey);
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list a {
+  color: var(--color-grey);
+}
+
+.footer-list a:hover,
+.footer-list a:focus {
+  color: var(--color-orange-red);
+}
+
+@media (min-width: 768px) {
+  nav {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  nav li:first-child {
+    flex-basis: auto;
+    text-align: left;
+    margin-right: auto;
+  }
+}
