@@ -64,6 +64,18 @@ a:hover {
 
 /* COMMON, GENERAL STYLES*/
 
+.skip-link {
+  padding: 1rem;
+  background-color: var(--color-white);
+  position: absolute;
+  transition: transform;
+  transform: translatey(-200%);
+}
+
+.skip-link:focus {
+  transform: translatey(0);
+}
+
 .container {
   max-width: 1200px;
   padding: 0 1rem;
@@ -232,7 +244,8 @@ nav a {
   display: block;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   color: var(--color-orange-red);
 }
 
