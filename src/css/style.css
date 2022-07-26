@@ -1,14 +1,14 @@
 /* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
 :root {
   --color-dark: #262625;
-  --color-medium-dark: #40403e;
-  --color-grey: #8c8c8c;
-  --color-light-grey: #e7e7e7;
+  --color-medium-dark: #3b3b3b;
+  --color-grey: #a2a2a2;
+  --color-light-grey: #dadada;
   --color-white-grey: #f2f2f2;
   --color-orange-yellow: #ea9d45;
   --color-mild-purple: #d26fffff;
   --color-orange-red: #ea6045;
-  --color-white: #f7f8fa;
+  --color-white: #ffffff;
   --font-size: 1.3rem;
 
   --font-barlow-condensed: "Barlow Condensed", sans-serif;
@@ -106,7 +106,7 @@ a:hover {
 }
 
 .button {
-  background-color: var(--color-grey);
+  background-color: var(--color-medium-dark);
   color: var(--color-white-grey);
   padding: 0.5rem 1rem;
   border-radius: 4px;
@@ -227,7 +227,7 @@ nav li:first-child {
 }
 
 nav a {
-  color: var(--color-grey);
+  color: var(--color-medium-dark);
   text-decoration: none;
   display: block;
 }
@@ -273,7 +273,7 @@ nav a:hover {
 
 .projects__heading {
   text-align: center;
-  color: var(--color-grey);
+  color: var(--color-medium-dark);
   font-size: 1.5rem;
   font-family: var(--font-barlow-condensed);
   text-transform: uppercase;
