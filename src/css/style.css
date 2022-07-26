@@ -247,10 +247,6 @@ nav a:hover {
     margin-right: auto;
   }
 
-  .nav__main-nav {
-    gap: 4rem;
-  }
-
   .nav__main-nav li:first-child {
     flex-basis: auto;
     text-align: left;
@@ -318,7 +314,7 @@ nav a:hover {
 .project__tech-used {
   text-align: center;
   color: var(--color-dark);
-
+  margin: 0 0 1rem;
   font-size: 1rem;
 }
 
@@ -378,6 +374,7 @@ nav a:hover {
 
   .projects__item {
     margin: 0;
+    height: auto;
     width: calc(1000px / 3);
   }
 
@@ -406,7 +403,8 @@ nav a:hover {
   }
 
   .project__descr {
-    height: 50px;
+    min-height: 80px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -461,14 +459,14 @@ footer {
 .footer__wrapper {
   color: var(--color-white);
   text-align: center;
-  padding: 4rem;
+  padding: 1rem;
 }
 
 small {
   color: var(--color-grey);
   display: block;
   font-size: 0.7rem;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .footer-list {
