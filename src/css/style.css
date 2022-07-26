@@ -19,6 +19,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -115,8 +116,6 @@ a:hover {
 .button:hover {
   background-color: var(--color-dark);
   color: var(--color-orange-red);
-  padding: 0.5rem;
-  border-radius: 4px;
 }
 
 /* intro section styles*/
