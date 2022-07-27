@@ -141,6 +141,10 @@ a:hover {
   justify-content: center;
 }
 
+.intro__wrapper--image-wrapper {
+  width: 200px;
+}
+
 .intro__profile-img {
   display: block;
   margin-bottom: 2rem;
@@ -562,6 +566,7 @@ small {
 
   .project__tech-used-list {
     color: var(--color-white);
+    font-weight: 700;
   }
 
   .footer-list a:hover,
