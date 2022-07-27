@@ -1,5 +1,6 @@
 /* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
 :root {
+  --color-body-bg-light-theme: #f2f2f2;
   --color-dark: #262625;
   --color-medium-dark: #3b3b3b;
   --color-grey: #a2a2a2;
@@ -11,8 +12,8 @@
   --color-white: #ffffff;
   --font-size: 1.3rem;
 
-  --font-barlow-condensed: "Barlow Condensed", sans-serif;
-  --font-montserrat: "Montserrat", sans-serif;
+  --font-barlow-condensed: 'Barlow Condensed', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
 }
 
 /* generic settings*/
@@ -29,10 +30,10 @@ html {
 }
 
 body {
+  background-color: var(--color-body-bg-light-theme);
   padding: 0;
   margin: 0;
   font-family: var(--font-montserrat);
-  background-color: var(--color-white-grey);
   color: var(--color-dark);
   font-size: var(--font-size);
 }
@@ -82,7 +83,7 @@ a:hover {
   margin: 0 auto;
 }
 
-[class*="fa-"] {
+[class*='fa-'] {
   font-size: 150%;
 }
 
@@ -247,6 +248,7 @@ nav a {
 nav a:hover,
 nav a:focus {
   color: var(--color-orange-red);
+  text-decoration: underline;
 }
 
 @media (min-width: 1000px) {
@@ -505,3 +507,75 @@ small {
     gap: 6rem;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  header {
+    background: var(--color-dark);
+  }
+
+  nav a {
+    color: var(--color-white);
+  }
+
+  nav a:hover,
+  nav a:focus {
+    color: var(--color-orange-yellow);
+  }
+
+  .button:hover {
+    background: var(--color-orange-yellow);
+    color: var(--color-white);
+  }
+
+  .section__intro {
+    background-color: var(--color-medium-dark);
+    color: var(--color-white-grey);
+  }
+
+  .intro__name {
+    color: var(--color-orange-yellow);
+  }
+
+  .section__projects {
+    background-color: var(--color-grey);
+  }
+
+  .projects__heading {
+    color: var(--color-white);
+  }
+
+  .projects__item {
+    background-color: var(--color-dark);
+  }
+
+  .projects__item-title {
+    color: var(--color-orange-yellow);
+  }
+
+  .project__descr {
+    color: var(--color-white);
+  }
+
+  .project__tech-used {
+    color: var(--color-orange-yellow);
+  }
+
+  .project__tech-used-list {
+    color: var(--color-white);
+  }
+
+  .footer-list a:hover,
+  .footer-list a:focus {
+    color: var(--color-orange-yellow);
+  }
+}
+
+/*@media (prefers-color-scheme: light) {*/
+/*  header {*/
+/*    background: var(--color-light-grey);*/
+/*  }*/
+
+/*  nav a {*/
+/*    color: var(--color-dark);*/
+/*  }*/
+/*}*/

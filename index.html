@@ -6,22 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta
       name="description"
-      content="Skochii Bohdan, front-end web developer. Focuses on semantic, accessible HTML, responsive/adaptive layouts, React and TypeScript "
-    />
+      content="Skochii Bohdan, front-end web developer. Focuses on semantic, accessible HTML, responsive/adaptive layouts, React and TypeScript " />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700;900&family=Montserrat:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/a61681c741.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/css/style.css" />
     <title>Bohdan Skochii</title>
   </head>
-  <body>
+  <body class="body">
     <a href="#intro" class="skip-link">Skip to content</a>
     <header>
       <div class="container">
@@ -74,142 +71,133 @@
       </div>
     </header>
     <div class="gradient-separator"></div>
-    <section
-      class="section section__top-padding section__bot-padding"
-      id="intro"
-      tabindex="0"
-    >
-      <div class="intro__wrapper container">
-        <div class="intro__wrapper--image-wrapper">
-          <img
-            class="intro__profile-img"
-            src="src/images/profile.jpg"
-            alt="Bohdan Skochii"
-            width="900"
-          />
+    <main>
+      <section
+        class="section section__intro section__top-padding section__bot-padding"
+        id="intro"
+        tabindex="0">
+        <div class="intro__wrapper container">
+          <div class="intro__wrapper--image-wrapper">
+            <img
+              class="intro__profile-img"
+              src="src/images/profile.jpg"
+              alt="Bohdan Skochii"
+              width="900" />
+          </div>
+          <div class="intro_wrapper--text-wrapper">
+            <p class="intro__text">
+              Hi, my name is <span class="intro__name">BOHDAN SKOCHII</span>
+            </p>
+            <h2 class="intro__heading">An aspiring front-end web developer</h2>
+            <p class="intro__text">
+              I focus on semantic accessible HTML markup, adaptive / responsive
+              layout, vanilla CSS/SCSS, Javascript, TypeScript and React
+            </p>
+          </div>
         </div>
-        <div class="intro_wrapper--text-wrapper">
-          <p class="intro__text">
-            Hi, my name is <span class="intro__name">BOHDAN SKOCHII</span>
+      </section>
+
+      <section
+        class="section section__projects section__top-padding section__bot-padding"
+        id="projects">
+        <h2 class="projects__heading">Projects</h2>
+        <article class="container">
+          <ul class="projects__list">
+            <li class="projects__item">
+              <a
+                href="https://skochdev.github.io/team10-js-project/"
+                class="project__item-card container">
+                <h3 class="projects__item-title">MovieDB API portal</h3>
+                <div class="projects__item-img--wrapper">
+                  <img
+                    class="projects__item-img"
+                    src="src/images/filmoteka.jpeg"
+                    width="1082"
+                    alt="Movie search portal" />
+                </div>
+                <p class="project__descr">
+                  Team project where we used MovieDB api and created our own
+                  portal. Pixel perfect, adaptive, vanilla javascript
+                </p>
+                <h4 class="project__tech-used">Technologies used</h4>
+                <ul class="project__tech-used-list">
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                  <li>Parcel</li>
+                  <li>AJAX</li>
+                </ul>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a
+                href="https://skochdev.github.io/team20-icecream-project/"
+                class="project__item-card container">
+                <h3 class="projects__item-title">IceCream landing page</h3>
+                <div class="projects__item-img--wrapper">
+                  <img
+                    class="projects__item-img"
+                    src="src/images/icecream.jpeg"
+                    width="1086"
+                    alt="IceCream Landing Page" />
+                </div>
+                <p class="project__descr">
+                  Team project. First experience making a website together with
+                  a group of developers. Git practice, pixel perfect, adaptive,
+                  svg, transitions, animation
+                </p>
+                <h4 class="project__tech-used">Technologies used</h4>
+                <ul class="project__tech-used-list">
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                  <li>Parcel</li>
+                  <li>Javascript</li>
+                </ul>
+              </a>
+            </li>
+            <li class="projects__item">
+              <a
+                href="https://skochdev.github.io/web-studio/"
+                class="project__item-card container">
+                <h3 class="projects__item-title">WebStudio classic website</h3>
+                <div class="projects__item-img--wrapper">
+                  <img
+                    class="projects__item-img"
+                    src="src/images/webstudio.jpeg"
+                    width="1182"
+                    alt="Movie search portal" />
+                </div>
+                <p class="project__descr">
+                  Solo projects that concludes HTML and CSS learning. Adaptive
+                  layout, semantic markup, SVG sprites, raster optimization,
+                  transitions, some javascript
+                </p>
+                <h4 class="project__tech-used">Technologies used</h4>
+                <ul class="project__tech-used-list">
+                  <li>HTML</li>
+                  <li>SCSS</li>
+                  <li>Javascript</li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section
+        class="section section--contact section__top-padding section__bot-padding"
+        id="contact">
+        <div class="contact__wrapper">
+          <h2 class="contact__heading visually-hidden">Contact me</h2>
+          <p class="contact__text">
+            If you are looking for a new team member and think that I might be a
+            good fit
           </p>
-          <h2 class="intro__heading">An aspiring front-end web developer</h2>
-          <p class="intro__text">
-            I focus on semantic accessible HTML markup, adaptive / responsive
-            layout, vanilla CSS/SCSS, Javascript, TypeScript and React
-          </p>
+          <a class="email-me__link button" href="mailto:b.skochii@gmail.com"
+            >Email me</a
+          >
         </div>
-      </div>
-    </section>
-
-    <section
-      class="section section__projects section__top-padding section__bot-padding"
-      id="projects"
-    >
-      <h2 class="projects__heading">Projects</h2>
-      <article class="container">
-        <ul class="projects__list">
-          <li class="projects__item">
-            <a
-              href="https://skochdev.github.io/team10-js-project/"
-              class="project__item-card container"
-            >
-              <h3 class="projects__item-title">MovieDB API portal</h3>
-              <div class="projects__item-img--wrapper">
-                <img
-                  class="projects__item-img"
-                  src="src/images/filmoteka.jpeg"
-                  width="1082"
-                  alt="Movie search portal"
-                />
-              </div>
-              <p class="project__descr">
-                Team project where we used MovieDB api and created our own
-                portal. Pixel perfect, adaptive, vanilla javascript
-              </p>
-              <h4 class="project__tech-used">Technologies used</h4>
-              <ul class="project__tech-used-list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>Parcel</li>
-                <li>AJAX</li>
-              </ul>
-            </a>
-          </li>
-          <li class="projects__item">
-            <a
-              href="https://skochdev.github.io/team20-icecream-project/"
-              class="project__item-card container"
-            >
-              <h3 class="projects__item-title">IceCream landing page</h3>
-              <div class="projects__item-img--wrapper">
-                <img
-                  class="projects__item-img"
-                  src="src/images/icecream.jpeg"
-                  width="1086"
-                  alt="IceCream Landing Page"
-                />
-              </div>
-              <p class="project__descr">
-                Team project. First experience making a website together with a
-                group of developers. Git practice, pixel perfect, adaptive, svg,
-                transitions, animation
-              </p>
-              <h4 class="project__tech-used">Technologies used</h4>
-              <ul class="project__tech-used-list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>Parcel</li>
-                <li>Javascript</li>
-              </ul>
-            </a>
-          </li>
-          <li class="projects__item">
-            <a
-              href="https://skochdev.github.io/web-studio/"
-              class="project__item-card container"
-            >
-              <h3 class="projects__item-title">WebStudio classic website</h3>
-              <div class="projects__item-img--wrapper">
-                <img
-                  class="projects__item-img"
-                  src="src/images/webstudio.jpeg"
-                  width="300"
-                  alt="Movie search portal"
-                />
-              </div>
-              <p class="project__descr">
-                Solo projects that concludes HTML and CSS learning. Adaptive
-                layout, semantic markup, SVG sprites, raster optimization,
-                transitions, some javascript
-              </p>
-              <h4 class="project__tech-used">Technologies used</h4>
-              <ul class="project__tech-used-list">
-                <li>HTML</li>
-                <li>SCSS</li>
-                <li>Javascript</li>
-              </ul>
-            </a>
-          </li>
-        </ul>
-      </article>
-    </section>
-
-    <section
-      class="section section--contact section__top-padding section__bot-padding"
-      id="contact"
-    >
-      <div class="contact__wrapper">
-        <h2 class="contact__heading visually-hidden">Contact me</h2>
-        <p class="contact__text">
-          If you are looking for a new team member and think that I might be a
-          good fit
-        </p>
-        <a class="email-me__link button" href="mailto:b.skochii@gmail.com"
-          >Email me</a
-        >
-      </div>
-    </section>
-
+      </section>
+    </main>
     <footer>
       <div class="footer__wrapper container">
         <ul class="footer-list">
