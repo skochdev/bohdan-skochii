@@ -310,6 +310,7 @@ nav a:focus {
 
 .projects__subheading {
   text-align: center;
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
@@ -466,12 +467,14 @@ nav a:focus {
 .contact__text {
   color: var(--color-light-grey);
   font-weight: 500;
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
 
 .email-me__link {
+  background-color: var(--color-white-grey);
+  color: var(--color-dark);
   font-family: var(--font-barlow-condensed);
   font-weight: 500;
   font-size: 1rem;
