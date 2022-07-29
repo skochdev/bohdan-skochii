@@ -224,7 +224,7 @@ header {
 /* NAVBAR*/
 nav {
   font-family: var(--font-barlow-condensed);
-  font-size: 80%;
+  font-size: 100%;
   padding: 1rem 0;
 }
 
