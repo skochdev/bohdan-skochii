@@ -260,6 +260,11 @@ nav a:focus {
     padding: 1rem 1rem;
   }
 
+  .nav__main-nav > li {
+    flex: 1;
+    text-align: center;
+  }
+
   .nav__main-nav li:first-child {
     flex-basis: auto;
     text-align: left;
@@ -275,7 +280,6 @@ nav a:focus {
 
 @media screen and (min-width: 620px) {
   .nav__main-nav {
-    gap: 4rem;
     justify-content: space-between;
   }
 }
@@ -297,6 +301,11 @@ nav a:focus {
   font-family: var(--font-barlow-condensed);
   text-transform: uppercase;
   margin-bottom: 3rem;
+}
+
+.projects__subheading {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .project__item-card {
@@ -360,14 +369,12 @@ nav a:focus {
 
   .projects__item {
     background-color: var(--color-white-grey);
-    max-width: 600px;
     margin: 0 auto;
     box-shadow: 0 1px 1px 1px rgba(140, 140, 140, 0.55);
     border-radius: 8px;
   }
 
   .projects__list {
-    gap: 1rem;
     margin-top: 0;
   }
 
@@ -392,14 +399,16 @@ nav a:focus {
   }
 
   .projects__item {
+    flex-basis: 32%;
     margin: 0;
+    gap: 2%;
     height: auto;
-    width: calc(1000px / 3);
   }
 
   .projects__list {
     display: flex;
     justify-content: space-between;
+    flex: 1;
     margin-top: 0;
   }
 
