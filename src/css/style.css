@@ -64,6 +64,11 @@ a:hover {
 }
 
 /* COMMON, GENERAL STYLES*/
+.calendar {
+  background-color: var(--color-white-grey);
+  max-width: 800px;
+  padding: 1rem;
+}
 
 .skip-link {
   padding: 1rem;
