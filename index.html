@@ -27,6 +27,7 @@
 <a href="#intro" class="skip-link">Skip to content</a>
 <header>
   <div class="container">
+   <button class='mobile-menu-toggle mobile-menu__burger js-open-menu' aria-expanded='false' aria-controls='mobile-menu'><i class="fa-solid fa-bars"></i></button>
     <nav>
       <ul class="nav__main-nav">
         <li>
@@ -73,6 +74,51 @@
         </li>
       </ul>
     </nav>
+    <div class='mobile-menu__container js-menu-container' id='mobile-menu'>
+      <button class='mobile-menu-toggle js-close-menu'><i class="fa-solid fa-xmark"></i></button>
+
+      <ul class="mobile-menu__nav">
+        <li>
+            <a href="">Home</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="./about.html">About</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+        <li>
+          <a
+            href="https://www.dropbox.com/s/jv6zswu1mtqyxmr/Bohdan-Skochii-junior-react-cv.pdf?dl=0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Resume</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/bohdan-skochii/"
+            target="_blank"
+            rel="noopener noreferrer"
+          ><span class="fa-brands fa-linkedin" aria-hidden="true"></span
+          ><span class="sr-only">LinkedIn</span></a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/skochdev?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          ><span class="fa-brands fa-github" aria-hidden="true"
+          ><span class="sr-only">GitHub</span></span
+          >
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
 <div class="gradient-separator"></div>
@@ -249,5 +295,10 @@
   GitHubCalendar(".calendar", "skochdev", { responsive: true });
 </script>
 <!--GITHUB CALENDAR / -->
+
+<!-- Body scroll lock-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script defer src='src/js/mobile-menu.js'></script>
+<!-- Body scroll lock / -->
 </body>
 </html>
