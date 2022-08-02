@@ -178,12 +178,17 @@ a:hover {
 
 .intro__profile-img {
   display: block;
-  margin-bottom: 2rem;
   margin-left: auto;
   margin-right: auto;
   height: auto;
   max-width: 100%;
   border-radius: 6px;
+}
+
+@media screen and (max-width: 620px) {
+  .intro__profile-img {
+    margin-bottom: 2rem;
+  }
 }
 
 .intro__text {
