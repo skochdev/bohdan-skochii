@@ -664,6 +664,11 @@ small {
   .footer-list a:focus {
     color: var(--color-orange-yellow);
   }
+
+  .section__about {
+    background-color: var(--color-medium-dark);
+    color: var(--color-light-grey);
+  }
 }
 
 /* ABOUT PAGE STYLES*/
