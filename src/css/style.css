@@ -234,7 +234,7 @@ nav {
 }
 
 @media screen and (max-width: 619px) {
-  nav   {
+  nav {
     display: none;
   }
 }
@@ -296,7 +296,6 @@ nav a:focus {
 }
 
 .mobile-menu__nav {
-
   margin-top: 80px;
 }
 
@@ -322,6 +321,7 @@ nav a:focus {
   background-color: transparent;
   padding: 20px 20px;
   position: absolute;
+  right: 0;
   border: none;
 }
 
@@ -595,6 +595,8 @@ small {
     background: var(--color-dark);
   }
 
+
+
   nav a {
     color: var(--color-white);
   }
@@ -603,6 +605,17 @@ small {
   nav a:focus {
     color: var(--color-orange-yellow);
   }
+
+  .mobile-menu__container {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+  }
+
+  .mobile-menu-toggle {
+    color: var(--color-light-grey);
+  }
+
+
 
   .button:hover {
     background: var(--color-orange-yellow);
